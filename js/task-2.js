@@ -1,11 +1,11 @@
 const countProps = function (obj) {
-  let counter = 0;
+  return Object.keys(obj).length;
 
-  for (const key of Object.keys(obj)) {
-    counter += 1;
-  }
-
-  return counter;
+  // let counter = 0;
+  // for (const key of Object.keys(obj)) {
+  //   counter += 1;
+  // }
+  // return counter;
 };
 
 console.log(countProps({})); // 0
