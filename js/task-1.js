@@ -12,4 +12,3 @@ user.premium = false;
 for (const key of Object.keys(user)) {
   console.log(`${key}: ${user[key]}`);
 }
-
