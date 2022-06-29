@@ -61,9 +61,10 @@ const account = {
   withdraw(amount) {
     if (amount > this.balance) {
       console.log('Зняття такої суми не можливо, недостатньо коштів');
-    } else {
-      this.balance -= amount;
+      return;
     }
+
+    this.balance -= amount;
 
     const transaction = this.createTransaction(amount, 'withdraw');
     this.transactions.push(transaction);
